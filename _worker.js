@@ -18,6 +18,18 @@ const DEFAULT_PATH_MAPPINGS = {
 			'/query-dns': '/dns-query',
 		},
 	},
+	'/twnic': {
+		targetDomain: 'dns.twnic.tw',
+		pathMapping: {
+			'/query-dns': '/dns-query',
+		},
+	},
+	'/quad9': {
+		targetDomain: 'dns.quad9.net',
+		pathMapping: {
+			'/query-dns': '/dns-query',
+		},
+	},
 	// Add more path mappings as needed
 };
 
@@ -513,3 +525,4 @@ export default {
 		return handleRequest(request, env);
 	},
 };
+
